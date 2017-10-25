@@ -1,0 +1,148 @@
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/roboto/Roboto-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/roboto/Roboto-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Flat-UI-Icons';
+	src: url('../fonts/glyphicons/flat-ui-icons-regular.eot');
+	src: url('../fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('../fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('../fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+  }
+
+[class^="fui-"],
+[class*="fui-"] {
+  font-family: 'Flat-UI-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+* {
+	font-family: Roboto;
+}
+
+header {
+	background-color: #2ABB9B;
+	width: 101%;
+	margin-left: -8px;
+	margin-top: -8px;
+	padding-top: 10px;
+	height: 35px;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+nav ul li{
+	font-weight: bold;
+	margin-right:20px;
+	margin-top: -41px;
+	height: 25px;
+	cursor: pointer;
+	transition: color 200ms;
+}
+
+nav ul li:hover {
+	color: white;
+}
+
+nav ul li #profile {
+	width: 25px;
+	height: 25px;
+	margin-top: -4px;
+	border-radius: 15px;
+	transition: box-shadow 200ms;
+}
+
+nav ul li #profile:hover {
+	box-shadow: 1px 1px 10px #888888;
+}
+
+header a{
+	margin-left: 30px;
+	position: relative;
+	bottom: 2px;
+}
+
+header #logo {
+	width:30px;
+	height:30px;
+}
+
+#notes {
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    padding-top: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.note {
+    cursor: pointer;
+    background-color: #80AEFB;
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+    margin-bottom: 50px;        
+    transition: box-shadow 200ms;
+}
+
+.note:hover {
+    box-shadow: 1px 1px 5px #888888;   
+    
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #B7B7B7;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.content {
+    width: 200px;
+    text-align: justify;
+    margin-left: 25px;
+}
+
+
+.fui-plus-circle:before {
+    content: "\e614";
+    font-size: 50px;
+    position: fixed;
+    right: 35px;
+    bottom: 25px;
+    color: #FF5A43;
+    border-radius: 25px;
+    transition: box-shadow 200ms, font-size 200ms, border-radius 200ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.fui-plus-circle:hover:before {
+    box-shadow: 1px 1px 10px #888888;   
+    font-size: 70px;    
+    border-radius: 35px;
+}
