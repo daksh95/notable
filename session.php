@@ -8,5 +8,6 @@
     $ses_sql = mysqli_query($conn,"SELECT username FROM accounts WHERE username = '".$user_check."'");
     $row = mysqli_fetch_array($ses_sql);
     $login_session = $row['username'];
+    // echo $login_session;
 
 ?>

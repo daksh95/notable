@@ -38,38 +38,32 @@
                 }                
             }
             else {
+                $id = 'new';
                 $title = "";
                 $content = "";
-                $sql = "SELECT count(*) FROM notes";
-                if($result = mysqli_query($conn, $sql)) {
-                    $id = mysqli_fetch_row($result)[0] + 1;
-                }
             }
         }
         ?>
         <?php
         echo "<div id = 'container'>
-        <form id='noteForm' action='notesubmit.php' method='POST'>
+        <form id='noteForm' action='notesubmit.php' method='POST' onsubmit='return submitNote();'>
             <input type='hidden' name='id' value='".$id."'>
             <input type='text' name='title' id='title' placeholder='Title Your Note' value='".$title."'>
             <input type='hidden' id='hidden' name='content'>
             <div id='summernote'></div>
             <script>$('#summernote').summernote('code','".$content."');</script>
-            </form>
-            <div id = 'buttons'>
-                <button class='notebutton' type='submit' form='noteForm'>Save</button>
-                <button class='notebutton' type='reset' form='noteForm'>Clear</button>
-            </div>"
+                <div id = 'buttons'>
+                    <button class='notebutton' type='submit'>Save</button>
+                    <button class='notebutton' type='reset'>Clear</button>
+                </div>
+            </form>"
     ?>    
     <script>
-        $(document).ready(function() {
-            $('#summernote').summernote({
-                height: 480,
-                minHeight: null,
-                maxheight: null,
-                width: 1400
-            });
-        });
+        function submitNote() {
+            var content = $('#summernote').summernote('code');
+            document.getElementById("hidden").value = content;
+            return true;
+        }
     </script>
 </body>
 </html>
