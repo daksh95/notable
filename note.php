@@ -54,7 +54,6 @@
             <script>$('#summernote').summernote('code','".$content."');</script>
                 <div id = 'buttons'>
                     <button class='notebutton' type='submit'>Save</button>
-                    <button class='notebutton' type='reset'>Clear</button>
                 </div>
             </form>"
     ?>    
