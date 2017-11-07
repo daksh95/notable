@@ -22,7 +22,7 @@ include 'session.php';
 	<nav>
 		<ul>
 			<li><a href="profile.php">My Notes</a></li>
-			<li><a href="logout.php"><img id="profile" src="images/placeholder.png"></a></li>
+			<li><a href="logout.php" title="Logout"><img id="profile" src="images/placeholder.png"></a></li>
 		</ul>
 </header>
 <body>

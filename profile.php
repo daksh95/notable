@@ -25,8 +25,7 @@
             <a href="" id="logolink"><img id = "logo" src="images/Logo.png"></a>
             <nav>
                 <ul>
-                    <li>My Notes</li>
-                    <li><a href="logout.php"><img id="profile" src="images/placeholder.png"></a></li>
+                    <li><a href="logout.php" title="Logout"><img id="profile" src="images/placeholder.png"></a></li>
                 </ul>
         </header>
         <body>
@@ -80,6 +79,6 @@
                     }
                 ?>
 			</div>
-            <i class="fui-plus-circle" onclick="redirect('new')"></i>
+            <i class="fui-plus-circle" title="New Note" onclick="redirect('new')"></i>
         </body>
 </html>
