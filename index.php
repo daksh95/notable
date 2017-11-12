@@ -4,6 +4,8 @@
         <title>Welcome</title>
         <link rel="stylesheet" type="text/css" href="welcome.css">
     </head>
+    <body>
+	<div id = "page" style="display: none;">
     <header>
         <a href="" id="logolink"><img id = "logo" src="images/Logo.png"></a>
         <nav>
@@ -13,7 +15,6 @@
                 <li id="loginToggle" >Login</li>
             </ul>
     </header>
-    <body>
         
         <div id="logocontainer">
             <img id="logolarge" src="images/Logo.png">
@@ -69,6 +70,11 @@
                 });
             });
         </script>
-
+</div>
+			<script>
+			$(document).ready(function() {
+				$("#page").show();
+			});
+			</script>
     </body>
 </html>
