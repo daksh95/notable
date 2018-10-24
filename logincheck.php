@@ -5,7 +5,7 @@
         
         $usr = $_POST['username'];
         $pwd = $_POST['pswd'];
-        $sql = "SELECT password FROM accounts WHERE username = '".$usr."'";
+        $sql = "SELECT password FROM accounts WHERE username = '$usr'";
         if(!($result = mysqli_query($conn,$sql))) {
             die("User does not exist.");
         }

@@ -38,7 +38,7 @@
                             echo "<div class='note' onclick='redirect($array[2],0)'>
                             <p class = 'title'>".$array[0]."</p>
                             <hr>
-                            <p class = 'content'>".substr($array[1],0,200)." ... <p>
+                            <p class = 'content'>".substr($array[1],0,250)."<p>
                         </div>";
                         }
                     }
@@ -70,9 +70,10 @@
 							echo "<div class='note' style='background-color: #E9D758;'	onclick='redirect($array[2], 2)'>
                             <p class = 'title'>".$array[0]."</p>
                             <hr>
-                            <p class = 'content'>".substr($array[1],0,200)." ... <p>
+                            <p class = 'content'>".$array[1]." ... <p>
                         </div>";
                         }
+                        // substr($array[1],0,200)
                     }
                     else {
                         echo "Some error";
